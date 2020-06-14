@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Save Environment</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ <!-- #region datatables files -->
+
+ <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+ 
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <style>table{
+      border: 1px solid black;
+      table-layout: fixed;
+      width: 200px;
+   }
+   
+   td {
+      border: 1px solid black;
+      overflow: hidden;
+      width: 100px;
+   }
+   
+   td:nth-child(3)
+   {
+    overflow-x: scroll;
+   }</style>
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+<script src="js/totalusers.js"></script>
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+ 
+        
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+         
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class=""><a  href="/tusers">Users Posts</a></li>
+            <li class="current"><a  href="/totalusers">Users </a></li>
+            <!-- <li><a class="" href="/tposts">Total Posts</a></li> -->
+            <!-- <li><a class="" href="/event">Total Events Completed</a></li> -->
+            <li><a class="" href="/tpostcount">Post Count</a></li>
+            <li><a class="" href="/image">Image Data</a></li>
+            
+            <li><a  href="/logout">Logout</a></li>
+
+            
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+   </header>
+
+<div id="posts">
+ 
+
+      <table id="example" class="display" style="width:100%">
+         <thead>
+             <tr>
+               <th>Name</th>
+               <th>Email</th>
+              <th>Password<th>
+               <th>Mobile Number</th>
+               <th>Under Deveopment</th>
+             </tr>
+         </thead>
+         <tfoot>
+            <th>Name</th>
+            <th>Email</th>
+           <th>Password<th>
+            <th>Mobile Number</th>
+            <th>Under Deveopment</th>
+         </tr>
+         </tfoot>
+     </table>
+       </div>
+
+
+
+     <!-- Header End -->
+    
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+            
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Us</h2>
+
+            <p>A Team of 4 members who have dedicated their work to bring people close to nature, this program helps to bring out good reforms cleanliness drives and 
+               more environment friendly drives.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Environment Co.</span><br>
+						   <span>100, Clement Town, DehraDun<br>
+						         Uttarakhand, India.
+                     </span><br>
+						   <span>1234567890</span><br>
+                     <span>environment@save.com</span>
+					   </p>
+
+               </div>
+
+               <!-- <div class="columns download">
+                  <p>
+                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div> -->
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+
+</div>
+
+<div id="myModal" class="modal">
+ <span class="close">&times;</span>
+ <img class="modal-content" id="img01">
+ <div id="caption"></div>
+</div>
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+           
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+ 
+   <!-- Java Script
+   ================================================== -->
+   <script
+   src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+   crossorigin="anonymous"></script>
+  
+     <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+ 
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"/>
+
+
+</html> 

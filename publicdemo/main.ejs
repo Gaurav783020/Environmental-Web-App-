@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Save Environment</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+<script src="js/posts.js"></script>
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+         <style>
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  
+  
+}
+
+.searchcss{
+      display: inline-block;
+
+}
+.post-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgb(231, 233, 233);
+    padding: 10px;
+    max-height: 1200px;
+    overflow : scroll;
+}
+
+.top-content {
+    display: flex;
+    padding: 10px;
+    background: rgb(241, 241, 241);
+    border-radius: 5px;
+}
+
+.top-content img {
+    order: 1;
+    width: 8%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.top-content p {
+    order: 2;
+    width: auto;
+    font-size: 24px;
+    color: rgb(32, 32, 32);
+    padding-left: 30px;
+}
+
+.mid-content {
+    padding: 0 10px;
+}
+
+.mid-content p {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    word-spacing: 1.5px;
+    line-height: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bottom-content img {
+    width: 100%;
+}
+
+.btns {
+    display: flex;
+}
+
+.btns button {
+
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    /* border: none; */
+    /* background: white; */
+    border-radius: 15px;
+    box-shadow: 1px 3px 8px 2px #bbbfbf;
+    transition: all 0.2s linear; 
+}
+
+.btns button:hover {
+    cursor: pointer;
+    /* box-shadow: 0px 0px 7px 1px #d6d6d6; */
+    border-color: rgb(0, 0, 0);
+}
+#btn1 {
+    order: 1;
+    width: 40%;
+}
+
+#btn2 {
+    order: 2;
+    width: 40%;
+}
+
+
+            </style>
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+         
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a  href="/main">Home</a></li>
+            <li><a class="smoothscroll" href="#posts">Posts</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="current" href="/profile">Profile</a></li>
+            <li><a class="" href="/upload">Upload Your Post</a></li>
+            
+            <li><a  href="/logout">Logout</a></li>
+
+            
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+  
+   </header>
+
+<div id="posts">
+               <div class="post-container">
+                
+          
+             <div id="outerdiv"></div>
+           
+          </div>
+            <br><br><br><br>
+
+            <div style="text-align: center;">
+      <div class="searchcss">
+            <input type="text" class="searchTerm" placeholder="What are you looking for?"></div>
+             <div class="searchcss">  <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                 </button>
+            </div>
+      </div>
+
+     <!-- Header End -->
+    
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+      <br><br><br><br><br><br>
+      <div class="row">
+
+         <div class="three columns">
+            
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Us</h2>
+
+            <p>A Team of 4 members who have dedicated their work to bring people close to nature, this program helps to bring out good reforms cleanliness drives and 
+               more environment friendly drives.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Environment Co.</span><br>
+						   <span>100, Clement Town, DehraDun<br>
+						         Uttarakhand, India.
+                     </span><br>
+						   <span>1234567890</span><br>
+                     <span>environment@save.com</span>
+					   </p>
+
+               </div>
+
+               <!-- <div class="columns download">
+                  <p>
+                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div> -->
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+
+</div>
+
+<div id="myModal" class="modal">
+ <span class="close">&times;</span>
+ <img class="modal-content" id="img01">
+ <div id="caption"></div>
+</div>
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+           
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+ 
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+</body>
+
+</html> 
